@@ -1591,6 +1591,12 @@ section {
   transition: background-color 0.6s ease;
 }
 
+.active.dot, .dot:hover {
+  background-color: #ffc451;
+}
+
+
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
