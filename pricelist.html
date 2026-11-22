@@ -38,13 +38,6 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
-
-    <!-- =======================================================
-  * Template Name: Gp - v4.3.0
-  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body>
@@ -53,11 +46,7 @@
       <div
         class="container d-flex align-items-center justify-content-lg-between"
       >
-        <!--  <h1 class="logo me-auto me-lg-0"><a href="index.html">H<span>.</span></a></h1>-->
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-        <a href="./index_en.html" class="get-started-btn scrollto">Home</a>
+        <a href="index.html" class="get-started-btn scrollto">Home</a>
       </div>
     </header>
     <!-- End Header -->
@@ -68,9 +57,9 @@
         <section class="breadcrumbs">
           <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-              <h2>Price List</h2>
+              <h2>Service Price List</h2>
               <ol>
-                <li><a href="./index_en.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li>Price List</li>
               </ol>
             </div>
@@ -85,7 +74,6 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         rel="stylesheet"
       />
-      <link href="" rel="stylesheet" />
       <style>
         body {
           padding: 30px 0;
@@ -155,6 +143,10 @@
           text-transform: uppercase;
         }
 
+        .pricingTable .pricing-content {
+          padding: 0 14px;
+        }
+
         .pricingTable .pricing-content ul {
           list-style: none;
           padding: 0;
@@ -162,8 +154,23 @@
         }
 
         .pricingTable .pricing-content ul li {
-          line-height: 30px;
+          line-height: 28px;
           color: #a7a8aa;
+          display: grid;
+          grid-template-columns: 1fr 1fr 0.9fr;
+          align-items: center;
+          gap: 6px;
+          padding: 4px 0;
+        }
+
+        .pricingTable .pricing-content ul li.price-header {
+          font-size: 11px;
+          line-height: 1.25;
+          font-weight: 700;
+          color: #6c757d;
+          border-bottom: 1px solid #eceef2;
+          padding-bottom: 8px;
+          margin-bottom: 6px;
         }
 
         .pricingTable .pricingTable-signup a {
@@ -235,7 +242,6 @@
           }
         }
       </style>
-      <script type="text/javascript" src=""></script>
       <script
         type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -244,7 +250,6 @@
         type="text/javascript"
         src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
       ></script>
-      <script type="text/javascript"></script>
 
       <div class="demo">
         <div class="container">
@@ -260,10 +265,31 @@
                 <h3 class="heading"></h3>
                 <div class="pricing-content">
                   <ul>
-                    <li><b> 38,00€ </b> 45 min</li>
-                    <li><b> 42,00€ </b> 60 min</li>
-                    <li><b> 50,00€ </b> 75 min</li>
-                    <li><b> 57,00€ </b> 90 min</li>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Duration:</span>
+                    </li>
+                    <li>
+                      <b>38,00€</b>
+                      <b class="price-copy">38,00€</b>
+                      <span>45 min</span>
+                    </li>
+                    <li>
+                      <b>42,00€</b>
+                      <b class="price-copy">42,00€</b>
+                      <span>60 min</span>
+                    </li>
+                    <li>
+                      <b>50,00€</b>
+                      <b class="price-copy">50,00€</b>
+                      <span>75 min</span>
+                    </li>
+                    <li>
+                      <b>57,00€</b>
+                      <b class="price-copy">57,00€</b>
+                      <span>90 min</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -274,16 +300,37 @@
                 <div class="pricingTable-header">
                   <i class="fa fa-adjust"></i>
                   <div class="price-value">
-                    Aromatherapy<span class="month">Massage</span>
+                    Aroma<span class="month">Massage</span>
                   </div>
                 </div>
                 <h3 class="heading"></h3>
                 <div class="pricing-content">
                   <ul>
-                    <li><b> 40,00€ </b> 45 min</li>
-                    <li><b> 45,00€ </b> 60 min</li>
-                    <li><b> 52,00€ </b> 75 min</li>
-                    <li><b> 59,00€ </b> 90 min</li>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Duration:</span>
+                    </li>
+                    <li>
+                      <b>40,00€</b>
+                      <b class="price-copy">40,00€</b>
+                      <span>45 min</span>
+                    </li>
+                    <li>
+                      <b>45,00€</b>
+                      <b class="price-copy">45,00€</b>
+                      <span>60 min</span>
+                    </li>
+                    <li>
+                      <b>52,00€</b>
+                      <b class="price-copy">52,00€</b>
+                      <span>75 min</span>
+                    </li>
+                    <li>
+                      <b>59,00€</b>
+                      <b class="price-copy">59,00€</b>
+                      <span>90 min</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -300,15 +347,35 @@
                 <h3 class="heading"></h3>
                 <div class="pricing-content">
                   <ul>
-                     <li><b> 40,00€ </b> 45 min</li>
-                    <li><b> 45,00€ </b> 60 min</li>
-                    <li><b> 52,00€ </b> 75 min</li>
-                    <li><b> 59,00€ </b> 90 min</li>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Duration:</span>
+                    </li>
+                    <li>
+                      <b>40,00€</b>
+                      <b class="price-copy">40,00€</b>
+                      <span>45 min</span>
+                    </li>
+                    <li>
+                      <b>45,00€</b>
+                      <b class="price-copy">45,00€</b>
+                      <span>60 min</span>
+                    </li>
+                    <li>
+                      <b>52,00€</b>
+                      <b class="price-copy">52,00€</b>
+                      <span>75 min</span>
+                    </li>
+                    <li>
+                      <b>59,00€</b>
+                      <b class="price-copy">59,00€</b>
+                      <span>90 min</span>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
-
 
             <div class="col-md-3 col-sm-6">
               <div class="pricingTable blue">
@@ -321,10 +388,31 @@
                 <h3 class="heading"></h3>
                 <div class="pricing-content">
                   <ul>
-                    <li><b> 40,00€ </b> 45 min</li>
-                    <li><b> 45,00€ </b> 60 min</li>
-                    <li><b> 52,00€ </b> 75 min</li>
-                    <li><b> 59,00€ </b> 90 min</li>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Duration:</span>
+                    </li>
+                    <li>
+                      <b>40,00€</b>
+                      <b class="price-copy">40,00€</b>
+                      <span>45 min</span>
+                    </li>
+                    <li>
+                      <b>45,00€</b>
+                      <b class="price-copy">45,00€</b>
+                      <span>60 min</span>
+                    </li>
+                    <li>
+                      <b>52,00€</b>
+                      <b class="price-copy">52,00€</b>
+                      <span>75 min</span>
+                    </li>
+                    <li>
+                      <b>59,00€</b>
+                      <b class="price-copy">59,00€</b>
+                      <span>90 min</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -335,16 +423,37 @@
                 <div class="pricingTable-header">
                   <i class="fa fa-briefcase"></i>
                   <div class="price-value">
-                    "HouseOfMassage" <span class="month">Massage</span>
+                    HouseOfMassage <span class="month">Massage</span>
                   </div>
                 </div>
                 <h3 class="heading"></h3>
                 <div class="pricing-content">
                   <ul>
-                    <li><b> 40,00€ </b> 45 min</li>
-                    <li><b> 45,00€ </b> 60 min</li>
-                    <li><b> 52,00€ </b> 75 min</li>
-                    <li><b> 59,00€ </b> 90 min</li>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Duration:</span>
+                    </li>
+                    <li>
+                      <b>40,00€</b>
+                      <b class="price-copy">40,00€</b>
+                      <span>45 min</span>
+                    </li>
+                    <li>
+                      <b>45,00€</b>
+                      <b class="price-copy">45,00€</b>
+                      <span>60 min</span>
+                    </li>
+                    <li>
+                      <b>52,00€</b>
+                      <b class="price-copy">52,00€</b>
+                      <span>75 min</span>
+                    </li>
+                    <li>
+                      <b>59,00€</b>
+                      <b class="price-copy">59,00€</b>
+                      <span>90 min</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -355,13 +464,22 @@
                 <div class="pricingTable-header">
                   <i class="fa fa-briefcase"></i>
                   <div class="price-value">
-                    Partial<span class="month">Massage</span>
+                    Partial <span class="month">Massage</span>
                   </div>
                 </div>
                 <h3 class="heading"></h3>
                 <div class="pricing-content">
                   <ul>
-                     <li><b> 28,00€ </b> 30 min</li>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Duration:</span>
+                    </li>
+                    <li>
+                      <b>28,00€</b>
+                      <b class="price-copy">28,00€</b>
+                      <span>30 min</span>
+                    </li>
                     <li><br /></li>
                     <li><br /></li>
                     <li><br /></li>
@@ -370,19 +488,28 @@
               </div>
             </div>
 
-      <!--
+            <!--
             <div class="col-md-3 col-sm-6">
               <div class="pricingTable blue">
                 <div class="pricingTable-header">
                   <i class="fa fa-briefcase"></i>
                   <div class="price-value">
-                    Thermal <span class="month">Blanket</span>
+                    Thermal Blanket <span class="month">Treatment</span>
                   </div>
                 </div>
                 <h3 class="heading"></h3>
                 <div class="pricing-content">
                   <ul>
-                    <li><b> 25,00€ (188,36 Kn)</b> 30 min</li>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Duration:</span>
+                    </li>
+                    <li>
+                      <b>25,00€</b>
+                      <b class="price-copy">25,00€</b>
+                      <span>30 min</span>
+                    </li>
                     <li><br /></li>
                     <li><br /></li>
                     <li><br /></li>
@@ -390,53 +517,40 @@
                 </div>
               </div>
             </div>
-
-   
-            <div class="col-md-3 col-sm-6">
-              <div class="pricingTable blue">
-                <div class="pricingTable-header">
-                  <i class="fa fa-briefcase"></i>
-                  <div class="price-value">
-                    Maderotherapy <span class="month">Treatment</span>
-                  </div>
-                </div>
-                <h3 class="heading"></h3>
-                <div class="pricing-content">
-                  <ul>
-                     <li><b> 29,00€ </b> 45 min</li>
-                    <li><b> 33,00€ </b> 60 min</li>
-                    <li><br /></li>
-                    <li><br /></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-                    --> 
-
-
+            -->
 
             <div class="col-md-3 col-sm-6">
               <div class="pricingTable blue">
                 <div class="pricingTable-header">
                   <i class="fa fa-briefcase"></i>
                   <div class="price-value">
-                    Thai Massage<span class="month">Traditional</span>
+                    Thai Massage<span class="month">Classic</span>
                   </div>
                 </div>
                 <h3 class="heading"></h3>
                 <div class="pricing-content">
                   <ul>
-                    <li><b> 50,00€ </b> 60 min</li>
-                    <li><b> 70,00€ </b> 90 min</li>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Duration:</span>
+                    </li>
+                    <li>
+                      <b>50,00€</b>
+                      <b class="price-copy">50,00€</b>
+                      <span>60 min</span>
+                    </li>
+                    <li>
+                      <b>70,00€</b>
+                      <b class="price-copy">70,00€</b>
+                      <span>90 min</span>
+                    </li>
                     <li><br /></li>
                     <li><br /></li>
                   </ul>
                 </div>
               </div>
             </div>
-
-
-
 
             <div class="col-md-3 col-sm-6">
               <div class="pricingTable blue">
@@ -449,31 +563,21 @@
                 <h3 class="heading"></h3>
                 <div class="pricing-content">
                   <ul>
-                    <li><b> 50,00€ </b> 60 min</li>
-                    <li><b> 70,00€ </b> 90 min</li>
-                    <li><br /></li>
-                    <li><br /></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            
-            
-
-            <div class="col-md-3 col-sm-6">
-              <div class="pricingTable blue">
-                <div class="pricingTable-header">
-                  <i class="fa fa-briefcase"></i>
-                  <div class="price-value">
-                    Thai Massage<span class="month">Foot & Hand</span>
-                  </div>
-                </div>
-                <h3 class="heading"></h3>
-                <div class="pricing-content">
-                  <ul>
-                    <li><b> 50,00€ </b> 60 min</li>
-                    <li><br /></li>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Duration:</span>
+                    </li>
+                    <li>
+                      <b>50,00€</b>
+                      <b class="price-copy">50,00€</b>
+                      <span>60 min</span>
+                    </li>
+                    <li>
+                      <b>70,00€</b>
+                      <b class="price-copy">70,00€</b>
+                      <span>90 min</span>
+                    </li>
                     <li><br /></li>
                     <li><br /></li>
                   </ul>
@@ -486,13 +590,22 @@
                 <div class="pricingTable-header">
                   <i class="fa fa-briefcase"></i>
                   <div class="price-value">
-                    Thai Massage<span class="month">Foot</span>
+                    Thai Massage<span class="month">Neck, Back & Head</span>
                   </div>
                 </div>
                 <h3 class="heading"></h3>
                 <div class="pricing-content">
                   <ul>
-                    <li><b> 45,00€ </b> 45 min</li>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Duration:</span>
+                    </li>
+                    <li>
+                      <b>50,00€</b>
+                      <b class="price-copy">50,00€</b>
+                      <span>60 min</span>
+                    </li>
                     <li><br /></li>
                     <li><br /></li>
                     <li><br /></li>
@@ -501,21 +614,27 @@
               </div>
             </div>
 
-
-
-            
             <div class="col-md-3 col-sm-6">
               <div class="pricingTable blue">
                 <div class="pricingTable-header">
                   <i class="fa fa-briefcase"></i>
                   <div class="price-value">
-                    Thai Massage<span class="month">Back, neck and head</span>
+                    Thai Massage<span class="month">Feet & Hands</span>
                   </div>
                 </div>
                 <h3 class="heading"></h3>
                 <div class="pricing-content">
                   <ul>
-                    <li><b> 50,00€ </b> 60 min</li>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Duration:</span>
+                    </li>
+                    <li>
+                      <b>50,00€</b>
+                      <b class="price-copy">50,00€</b>
+                      <span>60 min</span>
+                    </li>
                     <li><br /></li>
                     <li><br /></li>
                     <li><br /></li>
@@ -524,9 +643,36 @@
               </div>
             </div>
 
-         
-            
-<!--
+            <div class="col-md-3 col-sm-6">
+              <div class="pricingTable blue">
+                <div class="pricingTable-header">
+                  <i class="fa fa-briefcase"></i>
+                  <div class="price-value">
+                    Thai Massage<span class="month">Feet</span>
+                  </div>
+                </div>
+                <h3 class="heading"></h3>
+                <div class="pricing-content">
+                  <ul>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Duration:</span>
+                    </li>
+                    <li>
+                      <b>45,00€</b>
+                      <b class="price-copy">45,00€</b>
+                      <span>45 min</span>
+                    </li>
+                    <li><br /></li>
+                    <li><br /></li>
+                    <li><br /></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!--
             <div class="col-md-3 col-sm-6">
               <div class="pricingTable blue">
                 <div class="pricingTable-header">
@@ -538,33 +684,50 @@
                 <h3 class="heading"></h3>
                 <div class="pricing-content">
                   <ul>
-                    <li><b> 41,00€ </b> 60 min</li>
-                    <li><b> 58,00€ </b> 90 min</li>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Duration:</span>
+                    </li>
+                    <li>
+                      <b>41,00€</b>
+                      <b class="price-copy">41,00€</b>
+                      <span>60 min</span>
+                    </li>
+                    <li>
+                      <b>58,00€</b>
+                      <b class="price-copy">58,00€</b>
+                      <span>90 min</span>
+                    </li>
                     <li><br /></li>
                     <li><br /></li>
                   </ul>
                 </div>
               </div>
             </div>
+            -->
 
-
--->
-
-            
-
-                  
             <div class="col-md-3 col-sm-6">
               <div class="pricingTable blue">
                 <div class="pricingTable-header">
                   <i class="fa fa-briefcase"></i>
                   <div class="price-value">
-                    Massage<span class="month">Education</span>
+                    Lessons<span class="month">Massage</span>
                   </div>
                 </div>
                 <h3 class="heading"></h3>
                 <div class="pricing-content">
                   <ul>
-                    <li><b> 36,00€ </b> 45 min</li>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Duration:</span>
+                    </li>
+                    <li>
+                      <b>36,00€</b>
+                      <b class="price-copy">36,00€</b>
+                      <span>45 min</span>
+                    </li>
                     <li><br /></li>
                     <li><br /></li>
                     <li><br /></li>
@@ -573,23 +736,27 @@
               </div>
             </div>
 
-
-
-
-
-                  
             <div class="col-md-3 col-sm-6">
               <div class="pricingTable blue">
                 <div class="pricingTable-header">
                   <i class="fa fa-briefcase"></i>
                   <div class="price-value">
-                    Aroma Oil<span class="month">Extra</span>
+                    Add-on<span class="month">Essential Oil</span>
                   </div>
                 </div>
                 <h3 class="heading"></h3>
                 <div class="pricing-content">
                   <ul>
-                    <li><b> 1,00€ </b> Oil</li>
+                    <li class="price-header">
+                      <span>Current price:</span>
+                      <span>Price as of September 10, 2026.</span>
+                      <span>Description:</span>
+                    </li>
+                    <li>
+                      <b>1,00€</b>
+                      <b class="price-copy">1,00€</b>
+                      <span>oil</span>
+                    </li>
                     <li><br /></li>
                     <li><br /></li>
                     <li><br /></li>
@@ -597,12 +764,6 @@
                 </div>
               </div>
             </div>
-            
-
-
-
-            
-
           </div>
         </div>
       </div>
@@ -627,7 +788,7 @@
 
                 <p>
                   Titov trg 6, 51000 Rijeka <br />
-                  HRVATSKA<br /><br /><br /><br />
+                  CROATIA<br /><br /><br /><br />
                 </p>
                 <div class="social-links mt-3">
                   <a
@@ -653,13 +814,6 @@
           >. All Rights Reserved
         </div>
       </div>
-      <!--   <div class="credits">
-       All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
-      <!--     Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div> -->
     </footer>
     <!-- End Footer -->
 
@@ -683,4 +837,3 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
-
